@@ -1354,8 +1354,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 0px;
   }
 
-  .sm\:block {
-    display: block;
+  .sm\:inline-block {
+    display: inline-block;
   }
 
   .sm\:flex {
