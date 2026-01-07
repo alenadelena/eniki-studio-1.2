@@ -1,40 +1,63 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
 
 @theme {
-  --color-space: #0C0912;
-  --color-star: #DFF0FA;
+  --color-paper: #dcd8c7;
+  --color-fern: #1e2219;
+  --color-space: #0c0912;
+  --color-star: #dff0fa;
+
+  --font-sans: ui-sans-serif, 'Tenor Sans';
+  --font-serif: ui-serif, Cormorant;
 }
 
-@layer components{
-    .btn-primary {
-        @apply border border-paper hover:bg-paper hover:text-fern transition duration-300 ease-in-out p-2;
-    }
-    .btn-text {
-        @apply x-underline;
-    }
-    .x-underline {
-        display: inline-block;
-        position: relative;
-        @apply text-paper;
-      }
-      
-      .x-underline:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(1);
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        transform-origin: bottom left;
-        transition: transform 0.25s ease-out;
-        @apply bg-paper;
-      }
-      
-      .x-underline:hover:after {
-        transform: scaleX(0);
-        transform-origin: bottom left;
-      }
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility btn-primary {
+  @apply border border-paper hover:bg-paper hover:text-fern transition duration-300 ease-in-out p-2;
+}
+
+@utility btn-text {
+  @apply x-underline;
+}
+
+@utility x-underline {
+  display: inline-block;
+  position: relative;
+  @apply text-paper;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+    @apply bg-paper;
+  }
+
+  &:hover:after {
+    transform: scaleX(0);
+    transform-origin: bottom left;
+  }
 }
