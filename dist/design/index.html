@@ -15,11 +15,19 @@
 </head>
 <body class="bg-space flex flex-col min-h-screen w-full">
     <nav>
+		<input type="checkbox" id="hamburger" class="hidden">
 		<div class="w-full px-4 mx-auto max-w-7xl my-6">
 			<div class="relative flex sm:mb-3">
 				<a href="../">
 					<h1 class="font-sans text-xl text-star pr-4 mb-4">Alena Delena</h1>
 				</a>
+				<label for="hamburger" class="sm:hidden ml-auto cursor-pointer">
+					<div class="w-6 h-6 flex flex-col justify-center">
+						<span class="block w-full h-0.5 bg-star mb-1"></span>
+						<span class="block w-full h-0.5 bg-star mb-1"></span>
+						<span class="block w-full h-0.5 bg-star"></span>
+					</div>
+				</label>
 			</div>
 			<div class="font-sans text-md sm:flex gap-x-6 text-star">
 				<a href="../index.html" class="nav-link">Home</a>
@@ -35,6 +43,15 @@
 			</div> -->
 		</div>
 	</nav>
+	<div class="menu fixed inset-0 bg-space flex flex-col items-center justify-center text-star text-2xl space-y-8 z-50" style="display: none;">
+		<a href="../index.html" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">Home</a>
+		<a href="../design/" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">Design</a>
+		<a href="../artwork.html" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">Artwork</a>
+		<a href="../crafts.html" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">Crafts</a>
+		<a href="../archery.html" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">Archery</a>
+		<a href="../about.html" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">About</a>
+		<label for="hamburger" class="cursor-pointer text-4xl">&times;</label>
+	</div>
 	<main class="mx-auto max-w-7xl w-full grow">
 		<section class="px-4 pb-16">
 			<div class="grid pt-16 border-t border-solid md:items-center md:grid-cols-2 gap-x-20 border-star">
@@ -79,5 +96,16 @@
 			</div>
 		</div>
 	</footer>
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.querySelector('.menu');
+hamburger.addEventListener('change', () => {
+  if (hamburger.checked) {
+    menu.style.display = 'flex';
+  } else {
+    menu.style.display = 'none';
+  }
+});
+</script>
 </body>
 </html>

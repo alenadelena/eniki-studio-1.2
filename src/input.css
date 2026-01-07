@@ -38,6 +38,10 @@
   @apply x-underline;
 }
 
+@utility nav-link {
+  @apply hidden sm:inline-block mr-6 hover:underline transition duration-300 ease-in-out;
+}
+
 @utility x-underline {
   display: inline-block;
   position: relative;
