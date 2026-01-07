@@ -31,7 +31,7 @@
 }
 
 @utility btn-primary {
-  @apply border border-paper hover:bg-paper hover:text-fern transition duration-300 ease-in-out p-2;
+  @apply border border-star hover:bg-star hover:text-space transition duration-300 ease-in-out p-2;
 }
 
 @utility btn-text {
