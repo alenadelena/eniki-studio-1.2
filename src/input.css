@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+  --color-space: #0C0912;
+  --color-star: #DFF0FA;
+}
+
 @layer components{
     .btn-primary {
         @apply border border-paper hover:bg-paper hover:text-fern transition duration-300 ease-in-out p-2;
