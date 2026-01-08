@@ -19,7 +19,7 @@
 		<div class="w-full px-4 mx-auto max-w-7xl my-6">
 			<div class="relative flex sm:mb-3">
 				<a href="../">
-					<h1 class="font-sans text-xl text-star pr-4 mb-4">Alena Delena</h1>
+					<h1 class="font-sans text-xl text-star pr-4 sm:mb-4">Alena Delena</h1>
 				</a>
 				<label for="hamburger" class="sm:hidden ml-auto cursor-pointer">
 					<div class="w-6 h-6 flex flex-col justify-center">
@@ -31,7 +31,7 @@
 			</div>
 			<div class="font-sans text-md sm:flex gap-x-6 text-star">
 				<a href="../index.html" class="nav-link">Home</a>
-				<a href="../design/" class="nav-link">Design</a>
+				<a href="../design/index.html" class="nav-link">Design</a>
 				<a href="../artwork.html" class="nav-link">Artwork</a>
 				<a href="index.html" class="nav-link">Crafts</a>
 				<a href="../archery.html" class="nav-link">Archery</a>
@@ -43,14 +43,14 @@
 			</div> -->
 		</div>
 	</nav>
-	<div class="menu fixed inset-0 bg-space flex flex-col items-center justify-center text-star text-2xl space-y-8 z-50" style="display: none;">
-		<a href="../index.html" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">Home</a>
-		<a href="../design/" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">Design</a>
-		<a href="../artwork.html" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">Artwork</a>
-		<a href="../crafts/" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">Crafts</a>
-		<a href="../archery.html" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">Archery</a>
-		<a href="../about.html" onclick="document.getElementById('hamburger').checked=false; document.querySelector('.menu').style.display='none';">About</a>
-		<label for="hamburger" class="cursor-pointer text-4xl">&times;</label>
+	<div class="menu fixed inset-0 bg-space flex flex-col items-left justify-center text-star text-2xl space-y-8 z-50 px-4" style="display: none;" onclick="if (event.target.tagName === 'A' || event.target.classList.contains('close')) { document.getElementById('hamburger').checked = false; this.style.display = 'none'; }">
+		<a href="../index.html">Home</a>
+		<a href="../design/index.html">Design</a>
+		<a href="../artwork.html">Artwork</a>
+		<a href="../crafts/index.html">Crafts</a>
+		<a href="../archery.html">Archery</a>
+		<a href="../about.html">About</a>
+		<span class="close text-4xl cursor-pointer">&times;</span>
 	</div>
 	<main class="mx-auto max-w-7xl w-full grow">
 		<section class="px-4 pb-16">
