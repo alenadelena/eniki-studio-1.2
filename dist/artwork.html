@@ -13,26 +13,26 @@
 
 	<!-- <script src="https://gumroad.com/js/gumroad.js"></script> -->
 </head>
-<body class="bg-space flex flex-col min-h-screen w-full">
+<body class="bg-star text-space flex flex-col min-h-screen w-full">
     <nav>
 		<input type="checkbox" id="hamburger" class="hidden">
-		<div class="w-full px-4 mx-auto max-w-7xl my-6">
+		<div class="w-full px-4 mx-auto max-w-480 my-6">
 			<div class="relative flex sm:mb-3">
 				<a href="/">
-					<h1 class="font-sans text-xl text-star pr-4 sm:mb-4">Alena Delena</h1>
+					<h1 class="text-lg sm:mb-4">Alena Delena</h1>
 				</a>
 				<label for="hamburger" class="sm:hidden ml-auto cursor-pointer">
 					<div class="w-6 h-6 flex flex-col justify-center">
-						<span class="block w-full h-0.5 bg-star mb-1"></span>
-						<span class="block w-full h-0.5 bg-star mb-1"></span>
-						<span class="block w-full h-0.5 bg-star"></span>
+						<span class="block w-full h-0.5 bg-space mb-1"></span>
+						<span class="block w-full h-0.5 bg-space mb-1"></span>
+						<span class="block w-full h-0.5 bg-space"></span>
 					</div>
 				</label>
 			</div>
-			<div class="font-sans text-md sm:flex gap-x-6 text-star">
+			<div class="text-md flex flex-wrap md:block">
 				<a href="index.html" class="nav-link">Home</a>
 				<a href="design/index.html" class="nav-link">Design</a>
-				<a href="artwork.html" class="nav-link">Artwork</a>
+				<a href="artwork.html" class="nav-link opacity-50">Artwork</a>
 				<a href="crafts/index.html" class="nav-link">Crafts</a>
 				<a href="archery.html" class="nav-link">Archery</a>
 				<a href="about.html" class="nav-link">About</a>
@@ -43,7 +43,7 @@
 			</div> -->
 		</div>
 	</nav>
-	<div class="menu fixed inset-0 bg-space flex flex-col items-left justify-center text-star text-2xl space-y-8 z-50 px-4" style="display: none;" onclick="if (event.target.tagName === 'A' || event.target.classList.contains('close')) { document.getElementById('hamburger').checked = false; this.style.display = 'none'; }">
+	<div class="menu bg-star fixed inset-0 flex flex-col items-left justify-center text-2xl space-y-8 z-50 px-4" style="display: none;" onclick="if (event.target.tagName === 'A' || event.target.classList.contains('close')) { document.getElementById('hamburger').checked = false; this.style.display = 'none'; }">
 		<a href="index.html">Home</a>
 		<a href="design/index.html">Design</a>
 		<a href="artwork.html">Artwork</a>
@@ -52,11 +52,12 @@
 		<a href="about.html">About</a>
 		<span class="close text-4xl cursor-pointer">&times;</span>
 	</div>
-	<main class="mx-auto max-w-7xl w-full grow">
-		<section class="px-4 pb-16">
-			<div class="pt-16 border-t border-solid border-paper">
-				<div class="mb-6">
-					<h1 class="text-star font-serif text-2xl">A collection of my dark sci-fi series Fall/Winter 2025.</h1>
+	<main class="bg-space text-star">
+		<section class="px-4 pb-16 mx-auto w-full max-w-480 ">
+			<div class="pt-16">
+				<div class="mb-6 text-center">
+					<h1 class="text-2xl">A collection of my dark sci-fi series Fall/Winter 2025</h1>
+					<p class="text-lg">Drawn with Procreate</p>
 				</div>
 				<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
 					<img class="md:col-span-2" src="images/digitalart-10.webp"/>
@@ -73,10 +74,10 @@
 			</div>
 		</section>
 	</main>
-	<footer class="bg-star">
+	<footer class="bg-space text-star">
 		<div class="w-full px-4 py-6 mx-auto">
 			<div class="relative flex items-center justify-center">
-				<p class="font-serif text-space">Alena Delena © 2026</p>
+				<p>Alena Delena © 2026</p>
 			</div>
 		</div>
 	</footer>

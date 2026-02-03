@@ -5,11 +5,13 @@
 @theme {
   --color-paper: #dcd8c7;
   --color-fern: #1e2219;
-  --color-space: #0c0912;
+  --color-space: #0A090D;
   --color-star: #dff0fa;
+  --color-leaf: #C7D2C6;
+  --color-moss: #3F6E6A;
+  --color-space-800: #1A191D;
 
-  --font-sans: ui-sans-serif, 'Tenor Sans';
-  --font-serif: ui-serif, Cormorant;
+  --font-sans: ui-sans-serif, Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -31,7 +33,13 @@
 }
 
 @utility btn-primary {
-  @apply border border-star hover:bg-star hover:text-space transition duration-300 ease-in-out p-2;
+  @apply hover:opacity-50 transition duration-200 ease-in-out pb-2 border-b border-solid border-space text-xl;
+}
+@utility btn-primary-light {
+  @apply hover:opacity-50 transition duration-200 ease-in-out pb-2 border-b border-solid border-star text-xl;
+}
+@utility btn-secondary {
+  @apply hover:opacity-50 transition duration-200 ease-in-out pb-2 border-b border-solid border-space text-lg;
 }
 
 @utility btn-text {
@@ -39,7 +47,29 @@
 }
 
 @utility nav-link {
-  @apply hidden sm:inline-block mr-6 hover:underline transition duration-300 ease-in-out;
+  @apply hidden sm:inline-block mr-6 active:text-space hover:opacity-50 transition duration-200 ease-in-out;
+}
+
+@layer utilities {
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 20px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+    will-change: transform, opacity;
+  }
+
+  .fade-in-up-initial {
+    opacity: 0;
+  }
 }
 
 @utility x-underline {
@@ -63,5 +93,30 @@
   &:hover:after {
     transform: scaleX(0);
     transform-origin: bottom left;
+  }
+}
+
+/* Customize prose colors to use theme colors */
+@layer utilities {
+  .prose {
+    --tw-prose-body: var(--color-space);
+    --tw-prose-headings: var(--color-space);
+    --tw-prose-lead: var(--color-space);
+    --tw-prose-links: var(--color-space);
+    --tw-prose-bold: var(--color-space);
+    --tw-prose-counters: var(--color-space);
+    --tw-prose-bullets: var(--color-space);
+    --tw-prose-quotes: var(--color-space);
+  }
+
+  .dark .prose {
+    --tw-prose-body: var(--color-star);
+    --tw-prose-headings: var(--color-star);
+    --tw-prose-lead: var(--color-star);
+    --tw-prose-links: var(--color-star);
+    --tw-prose-bold: var(--color-star);
+    --tw-prose-counters: var(--color-star);
+    --tw-prose-bullets: var(--color-star);
+    --tw-prose-quotes: var(--color-star);
   }
 }

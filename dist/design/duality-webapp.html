@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Digital Twin Management Platform - Alena Delena</title>
+	<link href="../output.css" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Tenor+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="bg-star text-space flex flex-col min-h-screen w-full">
+	<nav>
+		<input type="checkbox" id="hamburger" class="hidden">
+		<div class="w-full px-4 mx-auto max-w-480 my-6">
+			<div class="relative flex sm:mb-3">
+				<a href="/">
+					<h1 class="font-sans text-xl text-star pr-4 sm:mb-4">Alena Delena</h1>
+				</a>				
+				<label for="hamburger" class="sm:hidden ml-auto cursor-pointer">
+					<div class="w-6 h-6 flex flex-col justify-center">
+						<span class="block w-full h-0.5 bg-star mb-1"></span>
+						<span class="block w-full h-0.5 bg-star mb-1"></span>
+						<span class="block w-full h-0.5 bg-star"></span>
+					</div>
+				</label>
+			</div>
+			<div class="font-sans text-md sm:flex gap-x-6 text-star">
+				<a href="../index.html" class="nav-link">Home</a>
+				<a href="index.html" class="nav-link opacity-50">Design</a>
+				<a href="../artwork.html" class="nav-link">Artwork</a>
+				<a href="../crafts/index.html" class="nav-link">Crafts</a>
+				<a href="../archery.html" class="nav-link">Archery</a>
+				<a href="../about.html" class="nav-link">About</a>
+			</div>
+		</div>
+	</nav>
+	<div class="menu fixed inset-0 bg-space flex flex-col items-left justify-center text-star text-2xl space-y-8 z-50 px-4" style="display: none;" onclick="if (event.target.tagName === 'A' || event.target.classList.contains('close')) { document.getElementById('hamburger').checked = false; this.style.display = 'none'; }">
+		<a href="../index.html">Home</a>
+		<a href="../design/index.html">Design</a>
+		<a href="../artwork.html">Artwork</a>
+		<a href="../crafts/index.html">Crafts</a>
+		<a href="../archery.html">Archery</a>
+		<a href="../about.html">About</a>
+		<span class="close text-4xl cursor-pointer">&times;</span>
+	</div>
+
+	<main class="mx-auto max-w-480 w-full grow text-star">    
+		<!-- Hero Section -->
+		<section class="py-40 flex flex-col justify-center items-center text-star text-center relative border-t border-solid border-star px-6">
+			<h1 class="text-4xl md:text-5xl font-bold mb-4 max-w-4xl">Digital Twin & Scenario Management Platform</h1>
+			<p class="text-xl md:text-2xl mb-8 opacity-90">A web platform for cloud simulation and digital twin sharing</p>
+			
+			<div class="flex flex-wrap gap-4 justify-center mb-12">
+				<span class="border border-star px-6 py-2 rounded-full">Oct 2022 - Apr 2025</span>
+				<span class="border border-star px-6 py-2 rounded-full">Product Designer</span>
+				<span class="border border-star px-6 py-2 rounded-full">Vue.js Platform</span>
+			</div>
+		</section>
+
+		<!-- Context Section -->
+		<section class="py-20 px-6">
+			<div class="max-w-6xl mx-auto">
+				<div class="grid md:grid-cols-3 gap-8">
+					<div class="border-l-4 border-star p-8">
+						<h3 class="text-2xl font-bold mb-4">The Challenge</h3>
+						<p>Many users didn't have the high-end hardware required for the Unreal Engine native application. Enterprise users needed to share scenarios with each other, and documentation required a platform that was faster to update than the native application.</p>
+					</div>
+					<div class="border-l-4 border-star p-8">
+						<h3 class="text-2xl font-bold mb-4">My Role</h3>
+						<p>Designed the complete digital twin and scenario management web application from scratch, later adapting it to enable students and general consumers to use the product.</p>
+					</div>
+					<div class="border-l-4 border-star p-8">
+						<h3 class="text-2xl font-bold mb-4">The Outcome</h3>
+						<p>The platform established how users conceptualize our simulation workflow. The terminology, hierarchy, and structure defined here became the standard across all product touchpoints.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Core Features -->
+		<section class="py-20 px-6 bg-star">
+			<div class="max-w-6xl mx-auto">
+				<h2 class="text-4xl font-bold mb-12 text-space">What Users Could Do</h2>
+				
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<div class="border border-space p-6">
+						<div class="text-3xl mb-3">📦</div>
+						<h4 class="text-xl font-bold mb-2 text-space">Asset Management</h4>
+						<p class="text-space">Upload and download digital twins for use across scenarios</p>
+					</div>
+					
+					<div class="border border-space p-6">
+						<div class="text-3xl mb-3">🎬</div>
+						<h4 class="text-xl font-bold mb-2 text-space">Scenario Library</h4>
+						<p class="text-space">Browse, create, and manage simulation scenarios</p>
+					</div>
+					
+					<div class="border border-space p-6">
+						<div class="text-3xl mb-3">📚</div>
+						<h4 class="text-xl font-bold mb-2 text-space">Documentation Hub</h4>
+						<p class="text-space">Access comprehensive guides and technical documentation</p>
+					</div>
+					
+					<div class="border border-space p-6">
+						<div class="text-3xl mb-3">👥</div>
+						<h4 class="text-xl font-bold mb-2 text-space">Organization Management</h4>
+						<p class="text-space">Manage team seats and user permissions per organization</p>
+					</div>
+					
+					<div class="border border-space p-6">
+						<div class="text-3xl mb-3">📊</div>
+						<h4 class="text-xl font-bold mb-2 text-space">Usage Insights</h4>
+						<p class="text-space">Track subscription tier limits and resource usage</p>
+					</div>
+					
+					<div class="border border-space p-6">
+						<div class="text-3xl mb-3">🎓</div>
+						<h4 class="text-xl font-bold mb-2 text-space">Interactive Guides</h4>
+						<p class="text-space">Step-by-step tutorials for onboarding new users</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Evolution Stage 1 -->
+		<section class="py-20 px-6">
+			<div class="max-w-6xl mx-auto">
+				<div class="flex items-center gap-4 mb-8">
+					<div>
+						<h2 class="text-4xl font-bold">Defining the System</h2>
+						<p class="text-xl">2022-2023 - Building the Foundation</p>
+					</div>
+				</div>
+				
+				<div class="border-l-4 border-star p-6 mb-8">
+					<h3 class="text-2xl font-bold mb-4">The Opportunity</h3>
+					<p class="mb-4">The web platform became more than a lightweight alternative—it became the primary way we communicated our workflow and terminology to users.</p>
+					<p class="font-semibold">Strategic Insight: The web app was easier to update than the native UE application, making it ideal for training and onboarding.</p>
+				</div>
+				
+				<h3 class="text-2xl font-bold mb-6">Key Design Decisions</h3>
+				
+				<div class="space-y-6">
+					<div class="border-l-4 border-star p-6">
+						<h4 class="text-xl font-bold mb-3">Terminology That Teaches</h4>
+						<p class="mb-4">Instead of using generic terms like "assets" or "files," we consistently used "digital twins" throughout the interface. This wasn't just labeling—it reinforced the conceptual model users needed to understand our system.</p>
+						<div class="bg-gray-100 h-48 flex items-center justify-center text-gray-400 my-4">
+							[Screenshot: Interface showing "digital twin" terminology in navigation and labels]
+						</div>
+					</div>
+					
+					<div class="border-l-4 border-star p-6">
+						<h4 class="text-xl font-bold mb-3">Making Structure Visible</h4>
+						<p class="mb-4">The session details page made our USD architecture explicit: every session must contain a space, and all digital twins exist within that space. This page was teaching users how our system was structured.</p>
+						<div class="bg-gray-100 h-64 flex items-center justify-center text-gray-400 my-4">
+							[Screenshot: Session details page showing space hierarchy with digital twins nested inside]
+						</div>
+						<p class="text-sm opacity-80">By visualizing the required structure (space → digital twins), users understood the system architecture through the interface itself.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Evolution Stage 2 -->
+		<section class="py-20 px-6 bg-star">
+			<div class="max-w-6xl mx-auto">
+				<div class="flex items-center gap-4 mb-8">
+					<div>
+						<h2 class="text-4xl font-bold text-space">Designing for Education Users</h2>
+						<p class="text-xl text-space">2024-2025 - Opening to Students</p>
+					</div>
+				</div>
+				
+				<div class="grid md:grid-cols-2 gap-8 mb-8">
+					<div class="border-l-4 border-space p-6">
+						<h3 class="text-2xl font-bold mb-4 text-space">The Challenge</h3>
+						<p class="text-space">The product team wanted to expand our user base to 100+ monthly active users through education initiatives. My job: design features that would support students without alienating enterprise customers or requiring credit cards upfront.</p>
+					</div>
+					
+					<div class="border-l-4 border-space p-6">
+						<h3 class="text-2xl font-bold mb-4 text-space">The Core Tension</h3>
+						<p class="text-space">Students expect free tools. But we couldn't just open the floodgates—we needed guard rails. The question: how do you design a freemium tier that feels generous while protecting business resources?</p>
+					</div>
+				</div>
+
+				<h3 class="text-2xl font-bold mb-6 text-space">Design Decisions</h3>
+				
+				<div class="space-y-6">
+					<div class="border-l-4 border-space p-6">
+						<h4 class="text-xl font-bold mb-3 text-space">1. No Credit Card Required</h4>
+						<p class="text-space mb-3">Requiring payment information upfront would instantly turn students away. They'd rather find something entirely free than enter card details for a "trial."</p>
+						<p class="text-space"><span class="font-bold">Solution:</span> Standard email sign-up with verification (to prevent spam) and a clear educational use clause: students could not use the platform for commercial purposes.</p>
+					</div>
+
+					<div class="border-l-4 border-space p-6">
+						<h4 class="text-xl font-bold mb-3 text-space">2. Soft Limits, Not Hard Blocks</h4>
+						<p class="text-space mb-3">This was our first time opening to the general public. We didn't know actual usage patterns yet—what if we set limits too low and frustrated legitimate users?</p>
+						<p class="text-space mb-3"><span class="font-bold">Approach:</span> Display limits in the UI (250 GB downloads, 20 hours of cloud simulation) but initially track rather than enforce them. This let us learn actual behavior before deciding on hard restrictions.</p>
+						<div class="bg-gray-100 h-48 flex items-center justify-center text-gray-400 mt-4">
+							[Screenshot: Account page with usage progress bars showing "15.3 GB / 250 GB" and "4.2 hrs / 20 hrs"]
+						</div>
+					</div>
+
+					<div class="border-l-4 border-space p-6">
+						<h4 class="text-xl font-bold mb-3 text-space">3. Strategic Upsell Placement</h4>
+						<p class="text-space mb-3">The hardest design challenge: what if an enterprise customer lands on the webapp and thinks this limited freemium version is all we offer?</p>
+						<p class="text-space mb-3"><span class="font-bold">The insight from sales:</span> Real enterprise customers don't come through self-service web sign-ups. They go through hands-on sales processes. The webapp is just for feature documentation and demos.</p>
+						<p class="text-space"><span class="font-bold">Solution:</span> Place "Contact Sales" CTAs on enterprise-only features (like team collaboration) but don't make free users feel constantly sold to. The webapp could safely target students without worrying about losing enterprise customers.</p>
+					</div>
+				</div>
+
+				<div class="border-2 border-space p-8 mt-8">
+					<h3 class="text-2xl font-bold mb-4 text-space">The Outcome</h3>
+					<p class="text-space mb-4">Acquired 30-40 active education users through community challenges—well short of the 100+ goal, but valuable as a learning experiment.</p>
+					<p class="text-space mb-6 italic">The reality: There simply aren't enough use cases for the general public to train ML on vision data. The market for this tool remains specialized.</p>
+					<div class="grid md:grid-cols-2 gap-6 mt-6">
+						<div>
+							<h4 class="font-bold mb-2 text-space">What Worked</h4>
+							<ul class="space-y-2 text-space">
+								<li>• No credit card requirement reduced friction</li>
+								<li>• Soft limits let us learn without blocking users</li>
+								<li>• Enterprise upsells didn't scare away students</li>
+							</ul>
+						</div>
+						<div>
+							<h4 class="font-bold mb-2 text-space">What We Learned</h4>
+							<ul class="space-y-2 text-space">
+								<li>• Most students stayed well under limits</li>
+								<li>• Usage tracking showed actual patterns</li>
+								<li>• Freemium design validated for future iterations</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Key Learnings -->
+		<section class="py-20 px-6 bg-space text-star">
+			<div class="max-w-6xl mx-auto">
+				<h2 class="text-4xl font-bold mb-12 text-center">What I Learned</h2>
+				
+				<div class="space-y-8">
+					<div class="border border-star p-8">
+						<h3 class="text-2xl font-bold mb-4">1. The Interface Teaches the System</h3>
+						<p class="mb-4 opacity-90">This web platform became more than a tool—it fundamentally shaped how users understood our USD infrastructure. Every design choice about organizing digital twins or displaying scenarios was also teaching users our mental model.</p>
+						<p class="opacity-80 italic">The insight: The UI isn't separate from documentation. The way you structure information IS the documentation.</p>
+					</div>
+					
+					<div class="border border-star p-8">
+						<h3 class="text-2xl font-bold mb-4">2. Track Before You Block</h3>
+						<p class="mb-4 opacity-90">Displaying limits (250 GB, 20 hours) without immediately enforcing them was the right call. We learned actual usage patterns before making restrictive decisions that could have frustrated legitimate users.</p>
+						<p class="opacity-80 italic">The approach: Soft limits let you learn. Hard limits should come from data, not assumptions.</p>
+					</div>
+					
+					<div class="border border-star p-8">
+						<h3 class="text-2xl font-bold mb-4">3. Enterprise and Consumer Are Different Products</h3>
+						<p class="mb-4 opacity-90">My fear—that enterprise customers would see the freemium webapp and think that's all we offered—was unfounded. Sales validated that real enterprise customers come through hands-on processes, not self-service sign-ups.</p>
+						<p class="opacity-80 italic">The lesson: Designing for students and designing for enterprise aren't competing goals if your go-to-market strategies are different. The webapp could safely target both audiences.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Impact -->
+		<section class="py-20 px-6">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-4xl font-bold mb-8 text-center">Impact</h2>
+				
+				<div class="border-2 border-star p-12 mb-12 text-center">
+					<div class="text-5xl mb-4">🌐</div>
+					<p class="text-2xl font-bold mb-4">The web platform became the primary onboarding tool</p>
+					<p>Users now learn the system through the web interface before ever touching the native application—reversing the original assumption that the web app was just a "lite" version.</p>
+				</div>
+				
+				<div class="grid md:grid-cols-2 gap-8">
+					<div class="border-l-4 border-star p-6">
+						<h3 class="text-xl font-bold mb-3">For Enterprise Users</h3>
+						<ul class="space-y-2">
+							<li>• Faster onboarding with web-based training</li>
+							<li>• Stakeholder demos without installation</li>
+							<li>• Centralized asset and scenario management</li>
+							<li>• Team collaboration without hardware barriers</li>
+						</ul>
+					</div>
+					
+					<div class="border-l-4 border-star p-6">
+						<h3 class="text-xl font-bold mb-3">For Student Users</h3>
+						<ul class="space-y-2">
+							<li>• Free access to professional-grade tools</li>
+							<li>• Learn synthetic data generation concepts</li>
+							<li>• No hardware requirements to get started</li>
+							<li>• Clear upgrade path for advanced needs</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Reflection -->
+		<section class="py-20 px-6 bg-star">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-4xl font-bold mb-8 text-center text-space">Reflection</h2>
+				
+				<div class="bg-star border border-space p-10">
+					<p class="text-lg leading-relaxed mb-6 text-space">
+						Building this platform from scratch taught me that <span class="font-bold">the interface is the product strategy</span>. Every choice about how to present digital twins, organize scenarios, or structure permissions was also a choice about what our platform fundamentally was.
+					</p>
+					<p class="text-lg leading-relaxed text-space">
+						The student expansion attempt was humbling—it forced me to confront the gap between "users we designed for" and "users we wanted to reach." Sometimes the right answer isn't better design, it's acknowledging that <span class="font-bold">you're solving a different problem entirely</span>. Free with limits worked better than cheap because it aligned value with usage, not time.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Related Projects -->
+		<section class="px-6 pb-16">
+			<div class="grid pt-16 border-t border-solid md:items-center md:grid-cols-2 gap-x-20 border-star">
+				<div class="mb-6 sm:mb-0">
+					<h2 class="mb-4 font-sans text-2xl text-star">Scenario Editor: Native Application</h2>
+					<p class="font-serif mb-9 text-lg text-star">Designing a custom Unreal Engine-based editor to enable visual scenario creation without code.</p>
+					<a href="scenario-editor.html" class="text-star btn-primary">Learn More</a>
+				</div>
+				<div class="max-w-xl mx-auto">
+					<div class="bg-gray-100 h-64 flex items-center justify-center text-gray-400">
+						[Scenario Editor Screenshot]
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="bg-star">
+		<div class="w-full px-4 py-6 mx-auto">
+			<div class="relative flex items-center justify-center">
+				<p class="text-space">Alena Delena © 2026</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		const hamburger = document.getElementById('hamburger');
+		const menu = document.querySelector('.menu');
+		hamburger.addEventListener('change', () => {
+			if (hamburger.checked) {
+				menu.style.display = 'flex';
+			} else {
+				menu.style.display = 'none';
+			}
+		});
+	</script>
+	<script>
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -100px 0px'
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.remove('fade-in-up-initial');
+					entry.target.classList.add('fade-in-up');
+					observer.unobserve(entry.target);
+				}
+			});
+		}, observerOptions);
+
+		document.querySelectorAll('section').forEach(section => {
+			observer.observe(section);
+		});
+	</script>
+</body>
+</html>
