@@ -13,10 +13,10 @@
 
 	<!-- <script src="https://gumroad.com/js/gumroad.js"></script> -->
 </head>
-<body class="bg-star text-space flex flex-col min-h-screen w-full">
+<body class="bg-star text-space flex flex-col min-h-screen w-full px-4">
     <nav>
 		<input type="checkbox" id="hamburger" class="hidden">
-		<div class="w-full px-4 mx-auto max-w-480 my-6">
+		<div class="w-full mx-auto max-w-480 py-6 border-gray-400 border-b border-solid">
 			<div class="relative flex sm:mb-3">
 				<a href="../">
 					<h1 class="text-lg sm:mb-4">Alena Delena</h1>
@@ -35,7 +35,7 @@
 				<a href="../artwork.html" class="nav-link">Artwork</a>
 				<a href="index.html" class="nav-link opacity-50">Crafts</a>
 				<a href="../archery.html" class="nav-link">Archery</a>
-				<a href="../about.html" class="nav-link">About</a>
+				<a href="../contact.html" class="nav-link">Contact</a>
 			</div>
 			<!-- <div class="justify-center hidden font-serif text-xl sm:flex gap-x-4 text-star">
 				<a href="index.html" class="nav-link">Home</a>
@@ -43,123 +43,37 @@
 			</div> -->
 		</div>
 	</nav>
-	<div class="menu bg-star fixed inset-0 flex flex-col items-left justify-center text-2xl space-y-8 z-50 px-4" style="display: none;" onclick="if (event.target.tagName === 'A' || event.target.classList.contains('close')) { document.getElementById('hamburger').checked = false; this.style.display = 'none'; }">
+	<div class="menu bg-star fixed inset-0 flex flex-col items-left justify-center text-2xl font-light space-y-8 z-50 px-4" style="display: none;" onclick="if (event.target.tagName === 'A' || event.target.classList.contains('close')) { document.getElementById('hamburger').checked = false; this.style.display = 'none'; }">
 		<a href="../index.html">Home</a>
 		<a href="../design/index.html">Design</a>
 		<a href="../artwork.html">Artwork</a>
 		<a href="../crafts/index.html">Crafts</a>
 		<a href="../archery.html">Archery</a>
-		<a href="../about.html">About</a>
+		<a href="../contact.html">Contact</a>
 		<span class="close text-4xl cursor-pointer">&times;</span>
 	</div>
-	<main class="px-4 mx-auto w-full max-w-480">
-		<section class="pt-16 border-t border-gray-400 border-solid">
-		<div class="grid md:grid-cols-3 gap-4">
-			<div class="md:col-span-2 grid md:grid-cols-6 gap-4">
-				<section class="md:col-span-3 pb-16">
-					<div class="pb-9">
-						<div class="mb-4">
-							<img src="../images/knife-1.jpg" class="object-cover mx-auto"/>
+	<main class="mx-auto w-full max-w-480">
+		<section class="pt-16 fade-in-up-initial">
+			<h1 class="text-5xl mb-6">Crafting Skills</h1>
+			<div class="grid md:grid-cols-5 gap-8 mb-16">
+				<ul id="craft-list" class="col-span-2 bg-leaf md:block hidden"></ul>
+				<div id="mobile-crafts" class="mt-8 space-y-8 md:hidden"></div>
+				<div class="md:col-span-3 hidden md:block">
+					<div class="bg-leaf p-6 grid grid-cols-6 gap-6">
+						<div class="col-span-2">
+							<img id="craft-image" src="../images/knife-1.jpg" class="object-cover w-full"/>
 						</div>
-						<div>
-							<h2 class="mb-4 text-3xl">Silversmithing</h2>
-							<p class="text-xl mb-9">Creating rings with sterling silver.</p>
-							<a href="knifemaking.html" class="btn-primary">Learn More</a>
+						<div class="col-span-4 mb-4">
+							<h2 id="craft-title" class="mb-9 text-3xl">Silversmithing</h2>
+							<h3 class="text-xl mb-3">Overview</h3>
+							<p id="craft-description" class="text-lg mb-9">Creating rings with sterling silver.</p>
+							<h3 class="text-xl mb-3">Up Next</h3>
+							<p id="craft-upnext" class="text-lg mb-9">Creating rings with sterling silver.</p>
+							<a id="craft-link" href="silversmithing.html" class="btn-primary">See Details</a>
 						</div>
-					</div>
-				</section>
-				<section class="md:col-span-3 pb-16">
-					<div class="pb-9">
-						<div class="mb-4">
-							<img src="../images/knife-1.jpg" class="object-cover mx-auto"/>
-						</div>
-						<div>
-							<h2 class="mb-4 text-3xl">Sewing</h2>
-							<p class="text-xl mb-9">Some sewing projects.</p>
-							<a href="knifemaking.html" class="btn-primary">Learn More</a>
-						</div>
-					</div>
-				</section>
-				<section class="md:col-span-2 px-4 pb-16">
-					<div class="pb-9">
-						<div class="mb-4">
-							<img src="../images/knife-1.jpg" class="object-cover mx-auto"/>
-						</div>
-						<div>
-							<h2 class="mb-4 text-3xl">Kumihimo</h2>
-							<p class="text-xl mb-9">Traditional silk braiding called kumihimo.</p>
-							<a href="knifemaking.html" class="btn-primary">Learn More</a>
-						</div>
-					</div>
-				</section>
-				<section class="md:col-span-2 px-4 pb-16">
-					<div class="pb-9">
-						<div class="mb-4">
-							<img src="../images/knife-1.jpg" class="object-cover mx-auto"/>
-						</div>
-						<div>
-							<h2 class="mb-4 text-3xl">Knifemaking</h2>
-							<p class="text-xl mb-9">Creating a chef's knife at Two Smiths taught by Bronson.</p>
-							<a href="knifemaking.html" class="btn-primary">Learn More</a>
-						</div>
-					</div>
-				</section>
-				<section class="md:col-span-2 pb-16">
-					<div class="pb-9">
-						<div class="mb-4">
-							<img src="../images/knife-1.jpg" class="object-cover mx-auto"/>
-						</div>
-						<div>
-							<h2 class="mb-4 text-3xl">Weaving</h2>
-							<p class="text-xl mb-9">Creating a chef's knife at Two Smiths taught by Bronson.</p>
-							<a href="knifemaking.html" class="btn-primary">Learn More</a>
-						</div>
-					</div>
-				</section>
-			</div>
-			<div class="col-span-1">
-				<section class="sticky top-8 bg-star z-30 pb-16">
-					<div class="grid md:grid-cols-2 gap-4 px-4">
-						<div class="">
-							<img src="../images/oatmealhat-main.jpeg" class="object-cover"/>
-						</div>
-						<div class="mb-9">
-							<h2 class="mb-4 text-3xl">Pattern: The Oatmeal Hat</h2>
-							<p class="text-xl mb-9">A double layered winter hat knitting pattern. Soft and fluffy. Pattern for sale, created by myself and tech edited by Pamela Hurd.</p>
-							<a href="../products/the-oatmeal-hat.html" class="btn-primary">Learn More</a>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-		</section>
-		<section>
-				<div class="grid py-16 border-t border-solid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 border-gray-400">
-					<div class="col-span-1 sm:col-span-2">
-						<h2 class="mb-4 text-xl">Downloads</h2>
-						<p class="text-lg mb-9">Knitting patterns for sale and for free download</p>
-					</div>
-					<div class="">
-						<a href="https://enikistudio.gumroad.com/l/the-oatmeal-hat">
-							<div class="w-full mb-6 h-96">
-								<img src="../images/oatmealhat-main.jpeg" class="object-cover w-full h-full"/>
-							</div>
-							<h3 class="text-lg mb-2">The Oatmeal Hat</h3>
-							<p class="text-md mb-4">This hat is a dupe of my favourite store-bought, machine knit, machine sewn hat. For the "store-bought" look, it is in fingering weight yarn and doubled in layer. </p>
-							<a href="https://enikistudio.gumroad.com/l/the-oatmeal-hat" class="btn-secondary">Purchase</a>
-						</a>
-					</div>
-					<div class="">
-						<a href="https://enikistudio.gumroad.com/l/cuddle-kerchief">
-							<div class="w-full mb-6 h-96">
-								<img src="../images/cuddle-kerchief.jpeg" class="object-cover w-full h-full"/>
-							</div>
-							<h3 class="text-lg mb-2">Cuddle Kerchief</h3>
-							<p class="text-md mb-4">A simple stockinette triangle kerchief for chilly spring days. When it's too warm for a whole scarf but too cold to keep your neck exposed.</p>
-							<a href="https://enikistudio.gumroad.com/l/cuddle-kerchief" class="btn-secondary">Free Download</a>
-						</a>
 					</div>
 				</div>
+			</div>
 		</section>
 		</div>
 	</main>
@@ -180,6 +94,148 @@ hamburger.addEventListener('change', () => {
     menu.style.display = 'none';
   }
 });
+</script>
+<script>
+// ============================================
+// CRAFT DATA - Edit this section to update crafts
+// ============================================
+const crafts = [
+    {
+        name: 'Silversmithing',
+        status: 'Just Started',
+        upNext: 'Setup jewelry smithing studio',
+        year: 2025,
+        link: 'silversmithing.html',
+        image: '../images/silversmithing.jpg',
+        description: 'I work with sterling silver to create handcrafted jewelry, focusing on rings and pendants. My process involves soldering, forming, shaping, and polishing each piece. I\'m currently expanding my skills to include lost wax sand casting techniques.'
+    },
+    {
+        name: 'Sewing',
+        status: 'Learning',
+        upNext: 'Sew a wool jacket',
+        year: 2019,
+        link: 'sewing.html',
+        image: '../images/sewing.jpg',
+        description: 'Garment-focused sewing, learning to drape and draft my own clothes, and tailoring to my size. Eventually, I would like to be able to make custom men\'s clothing.'
+    },
+    {
+        name: 'Kumihimo',
+        status: 'Marudai Focus',
+        upNext: 'Braid for yazutsu',
+        year: 2023,
+        link: 'kumihimo.html',
+        image: '../images/kumihimo.jpg',
+        description: 'Traditional silk braiding called kumihimo. Cones of thin silk thread were imported from Japan and I use a round braid stand to create himo. Each braid contains approximately 672 strands of thread. So far, they are most useful for kyudo bow bags.'
+    },
+    {
+        name: 'Blacksmithing',
+        status: 'Learning',
+        upNext: 'Smith a Japanese arrow tip',
+        year: 2013,
+        link: 'blacksmithing.html',
+        image: '../images/knife-1.jpg',
+        description: 'While I help create some social media posts for the Two Smiths forge in Waterloo, I am able to play around with metal and experiment with methods of forming hot steel. It started in 2013 when I was a part of a highschool glass art installation for RIM park in Waterloo that needed metal armature.'
+    },
+    {
+        name: 'Gardening',
+        status: 'Aroid Focus',
+        upNext: 'Repot Ash tree bonsai in the spring',
+        year: 2019,
+        link: 'gardening.html',
+        image: '../images/oatmealhat-main.jpeg',
+        description: 'Some gardening projects.'
+    },
+    {
+        name: 'Knitting',
+        status: 'Published Designs',
+        upNext: 'Paused',
+        year: 2020,
+        link: 'knitting.html',
+        image: '../images/oatmealhat-main.jpeg',
+        description: 'Creating a chef\'s knife at Two Smiths taught by Bronson.'
+    },
+    {
+        name: 'Weaving',
+        status: 'Paused',
+        upNext: 'Paused',
+        year: 2020,
+        link: 'weaving.html',
+        image: '../images/oatmealhat-main.jpeg',
+        description: 'Creating a chef\'s knife at Two Smiths taught by Bronson.'
+    }
+];
+
+// ============================================
+// DOM ELEMENTS
+// ============================================
+const craftList = document.getElementById('craft-list');
+const mobileCrafts = document.getElementById('mobile-crafts');
+const craftImage = document.getElementById('craft-image');
+const craftTitle = document.getElementById('craft-title');
+const craftDescription = document.getElementById('craft-description');
+const craftUpNext = document.getElementById('craft-upnext');
+const craftLink = document.getElementById('craft-link');
+
+// ============================================
+// RENDER CRAFTS
+// ============================================
+crafts.forEach(craft => {
+    // Desktop list item
+    const li = document.createElement('li');
+    li.className = 'px-6 py-4 hover:bg-leaf-dark transition-colors duration-300 ease-in-out';
+    li.innerHTML = `
+        <a href="${craft.link}" class="craft-item block" 
+           data-title="${craft.name}" 
+           data-description="${craft.description}" 
+           data-image="${craft.image}" 
+           data-link="${craft.link}">
+            <div class="flex justify-between mb-2">
+                <h2 class="text-2xl">${craft.name}</h2>
+                <h2 class="text-lg">${craft.status}</h2>
+            </div>
+            <div class="flex justify-between">
+                <p class="text-md opacity-60">Up Next: ${craft.upNext}</p>
+                <p class="text-md opacity-60">Started ${craft.year}</p>
+            </div>
+        </a>
+    `;
+    craftList.appendChild(li);
+
+    // Mobile card
+    const mobileDiv = document.createElement('div');
+    mobileDiv.innerHTML = `
+        <img src="${craft.image}" class="object-cover w-full h-60 mb-4" alt="${craft.name}"/>
+        <h2 class="mb-2 text-2xl">${craft.name}</h2>
+        <p class="text-md mb-4">${craft.description}</p>
+        <a href="${craft.link}" class="btn-primary">Learn More</a>
+    `;
+    mobileCrafts.appendChild(mobileDiv);
+});
+
+// ============================================
+// PREVIEW FUNCTIONALITY
+// ============================================
+const setCraft = (item) => {
+    if (!item) return;
+    const { image, title, description, link } = item.dataset;
+    const craft = crafts.find(c => c.name === title);
+    
+    craftImage.src = image;
+    craftImage.alt = title;
+    craftTitle.textContent = title;
+    craftDescription.textContent = description;
+    craftUpNext.textContent = craft.upNext;
+    craftLink.href = link;
+};
+
+const craftItems = document.querySelectorAll('.craft-item');
+craftItems.forEach(item => {
+    item.addEventListener('mouseenter', () => setCraft(item));
+    item.addEventListener('focus', () => setCraft(item));
+});
+
+// Set default preview to first craft
+setCraft(craftItems[0]);
 </script>
 <script>
   const observerOptions = {

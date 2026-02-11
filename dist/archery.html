@@ -13,10 +13,10 @@
 
 	<!-- <script src="https://gumroad.com/js/gumroad.js"></script> -->
 </head>
-<body class="bg-star text-space flex flex-col min-h-screen w-full">
+<body class="bg-star text-space flex flex-col min-h-screen w-full px-4">
     <nav>
 		<input type="checkbox" id="hamburger" class="hidden">
-		<div class="w-full px-4 mx-auto max-w-480 my-6">
+		<div class="w-full mx-auto max-w-480 py-6 border-gray-400 border-b border-solid">
 			<div class="relative flex sm:mb-3">
 				<a href="/">
 					<h1 class="text-lg sm:mb-4">Alena Delena</h1>
@@ -35,7 +35,7 @@
 				<a href="artwork.html" class="nav-link">Artwork</a>
 				<a href="crafts/index.html" class="nav-link">Crafts</a>
 				<a href="archery.html" class="nav-link opacity-50">Archery</a>
-				<a href="about.html" class="nav-link">About</a>
+				<a href="contact.html" class="nav-link">Contact</a>
 			</div>
 			<!-- <div class="justify-center hidden font-serif text-xl sm:flex gap-x-4 text-star">
 				<a href="index.html" class="nav-link">Home</a>
@@ -43,7 +43,7 @@
 			</div> -->
 		</div>
 	</nav>
-	<div class="menu bg-star fixed inset-0 flex flex-col items-left justify-center text-2xl space-y-8 z-50 px-4" style="display: none;" onclick="if (event.target.tagName === 'A' || event.target.classList.contains('close')) { document.getElementById('hamburger').checked = false; this.style.display = 'none'; }">
+	<div class="menu bg-star fixed inset-0 flex flex-col items-left justify-center text-2xl font-light space-y-8 z-50 px-4" style="display: none;" onclick="if (event.target.tagName === 'A' || event.target.classList.contains('close')) { document.getElementById('hamburger').checked = false; this.style.display = 'none'; }">
 		<a href="index.html">Home</a>
 		<a href="design/index.html">Design</a>
 		<a href="artwork.html">Artwork</a>
@@ -53,20 +53,34 @@
 		<span class="close text-4xl cursor-pointer">&times;</span>
 	</div>
 	<main class="mx-auto w-full max-w-480">
-		<section class="px-4 pb-16 fade-in-up-initial">
-			<div class="pt-16 border-t border-solid border-gray-400">
-				<div class="mb-6">
-					<p class="text-2xl">Kyūdō — Nidan（二段, 2nd Dan）2025. Started 2023.</p>
+		<section class="py-16 fade-in-up-initial">
+			<div class="mb-6">
+				<p class="text-2xl font-light">Kyūdō — Nidan（二段, 2nd Dan）2025. Started 2023.</p>
+			</div>
+			<div class="grid grid-cols-3 gap-4 mb-16">
+				<div>
+					<h1 class="text-xl col-span-1 mb-4">Achievements</h1>
+					<ul>
+						<li>Todo: Create a braid for my yazutsu (arrow case)</li>
+						<li>Braid and gift 2 himos for two Kyudo senseis</li>
+						<li>Braided 5 himos for Kyudo-mates for their yumi bokuro </li>
+						<li>Share the art of kumihimo on Tiktok and Instagram</li>
+						<li>Posted himos on the international Kumihimo Facebook group for feedback</li>
+						<li>Braided first ever himo</li>
+					</ul>
 				</div>
-				<div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
-					<video controls class="object-contain w-full col-span-1 sm:col-span-3"  poster="images/kyudo-izome-2026-poster.png">
-						<source src="videos/kyudo-izome-2026.mp4" type="video/mp4">
-					</video>
-					<p class="prose col-span-1">January 2026 izome. First shots of the year. Tenouchi, kai, nerai needs some work for this year so that I can pass 3rd Dan.</p>
-					<img class="sm:col-span-2" src="images/kyudo-exam.jpg"/>
-					<img class="sm:col-span-2" src="images/kyudo-exam-2.jpg"/>
-					<img class="sm:col-span-3" src="images/kyudo-exam-3.jpg"/>
-				</div>
+				<video controls class="object-contain w-full col-span-2">
+					<source src="../videos/kyudo-izome-2026.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div>
+				<video controls class="object-contain w-full col-span-1 sm:col-span-3"  poster="images/kyudo-izome-2026-poster.png">
+					<source src="videos/kyudo-izome-2026.mp4" type="video/mp4">
+				</video>
+				<p class="prose col-span-1">January 2026 izome. First shots of the year. Tenouchi, kai, nerai needs some work for this year so that I can pass 3rd Dan.</p>
+				<img class="sm:col-span-2" src="images/kyudo-exam.jpg"/>
+				<img class="sm:col-span-2" src="images/kyudo-exam-2.jpg"/>
+				<img class="sm:col-span-3" src="images/kyudo-exam-3.jpg"/>
 			</div>
 		</section>
 	</main>

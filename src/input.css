@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 @import 'tailwindcss';
 
 @plugin '@tailwindcss/typography';
@@ -8,10 +9,10 @@
   --color-space: #0A090D;
   --color-star: #dff0fa;
   --color-leaf: #C7D2C6;
+  --color-leaf-dark: #A3B18A;
   --color-moss: #3F6E6A;
   --color-space-800: #1A191D;
-
-  --font-sans: ui-sans-serif, Helvetica, Arial, sans-serif;
+  --font-sans: "Figtree", ui-sans-serif, Arial, sans-serif;
 }
 
 /*

@@ -36,7 +36,6 @@
 	<link href="./output.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Tenor+Sans&display=swap" rel="stylesheet">
 	<link rel="icon" type="image/png" href="favicon.png">
 	<link rel="apple-touch-icon" href="logo-192.png">
 	<link rel="preload" as="image" href="images/digitalart-1.webp">
@@ -51,10 +50,10 @@
 	<link rel="preload" as="image" href="images/digitalart-10.webp">
 	<script src="https://gumroad.com/js/gumroad.js"></script>
 </head>
-<body class="bg-star text-space flex flex-col min-h-screen w-full">
+<body class="bg-star text-space flex flex-col min-h-screen w-full px-4">
     <nav>
 		<input type="checkbox" id="hamburger" class="hidden">
-		<div class="w-full px-4 mx-auto max-w-480 my-6">
+		<div class="w-full mx-auto max-w-480 py-6 border-gray-400 border-b border-solid">
 			<div class="relative flex sm:mb-3">
 				<a href="index.html">
 					<h1 class="text-lg sm:mb-4">Alena Delena</h1>
@@ -73,7 +72,7 @@
 				<a href="artwork.html" class="nav-link">Artwork</a>
 				<a href="crafts/index.html" class="nav-link">Crafts</a>
 				<a href="archery.html" class="nav-link">Archery</a>
-				<a href="about.html" class="nav-link">About</a>
+			<a href="contact.html" class="nav-link">Contact</a>
 			</div>
 			<!-- <div class="justify-center hidden font-serif text-xl sm:flex gap-x-4 text-star">
 				<a href="index.html" class="nav-link">Home</a>
@@ -81,7 +80,7 @@
 			</div> -->
 		</div>
 	</nav>
-	<div class="menu bg-star fixed inset-0 flex flex-col items-left justify-center text-2xl space-y-8 z-50 px-4" style="display: none;" onclick="if (event.target.tagName === 'A' || event.target.classList.contains('close')) { document.getElementById('hamburger').checked = false; this.style.display = 'none'; }">
+	<div class="menu bg-star fixed inset-0 flex flex-col items-left justify-center text-2xl font-light space-y-8 z-50 px-4" style="display: none;" onclick="if (event.target.tagName === 'A' || event.target.classList.contains('close')) { document.getElementById('hamburger').checked = false; this.style.display = 'none'; }">
 		<a href="index.html">Home</a>
 		<a href="design/index.html">Design</a>
 		<a href="artwork.html">Artwork</a>
@@ -92,12 +91,12 @@
 	</div>
 	<main class="mx-auto w-full max-w-480">
 		<section class="px-4 pb-16 fade-in-up-initial">
-			<div class="grid py-[14rem] border-t border-solid md:grid-cols-2 gap-x-4 border-gray-400">
+			<div class="grid py-[14rem] md:grid-cols-2 gap-x-4">
 				<div class="">
 					<h1 class="mb-4 font-light text-3xl md:text-7xl">This is a 'lil weird</h1>
 				</div>
 				<div class="mb-9">
-					<p class="font-light text-xl md:text-3xl">To have a website about myself like I'm a business. I made this site so I have a link to put on my resume. <br><br>But lately people have been asking, "so what are you up to now these days?" I tend to collect a lot of hobbies. This is a nice place to put it all in one.<br><br>Also this site isn't done yet so if you've stumbled upon this text congrats you've found it in progress. Feel free to explore and send feedback though that'd be fun. @eniki.studio on Instagram.</p>
+					<p class="font-light text-xl md:text-3xl">To have a website about myself like I'm a business. I made this site so I have a link to put on my resume. <br><br>But lately people have been asking what I am up to these days. I tend to collect a lot of hobbies. This is a nice place to put it all in one.<br><br>Also this site isn't done yet so if you've stumbled upon this text congrats you've found it in progress. Feel free to explore and send feedback though that'd be fun. @eniki.studio on Instagram.</p>
 				</div>
 			</div>
 		</section>
@@ -108,58 +107,58 @@
 				</div>
 				<div class="mb-9">
 					<h2 class="mb-4 font-light text-3xl">Product Design Work</h2>
-					<p class="text-xl mb-9">I spent three years as a Product Designer at Duality, a San Mateo company, working remotely from Henderson, Nevada.</p>
+					<p class="text-xl font-light mb-9">I spent three years as a Product Designer at Duality, a San Mateo company, working remotely from Henderson, Nevada.</p>
 					<a href="design/index.html" class="btn-primary">See Design Work</a>
 				</div>
 			</div>
 		</section>
 		<section class="px-4 fade-in-up-initial">
-			<div class="grid py-20 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+			<div class="grid py-20 grid-cols-1 md:grid-cols-4 gap-6">
 				<div class="col-span-1 mb-9">
 					<h1 class="mb-4 font-light text-2xl">Artwork</h1>
 					<p class="text-lg mb-9">Dark sci-fi series. Fall/Winter 2025</p>
 					<a href="artwork.html" class="btn-primary">See More</a>
 				</div>
 				<div class="">
-					<div class="w-full h-[40rem]">
+					<div class="w-full h-[32rem] md:h-[40rem]">
 						<img src="images/digitalart-10.webp" class="object-cover w-full h-full"/>
 					</div>
 				</div>
 				<div class="">
-					<div class="w-full h-[40rem]">
+					<div class="w-full h-[32rem] md:h-[40rem]">
 						<img src="images/digitalart-4.webp" class="object-cover w-full h-full"/>
 					</div>
 				</div>
 				<div class="">
-					<div class="w-full h-[40rem]">
+					<div class="w-full h-[32rem] md:h-[40rem]">
 						<img src="images/digitalart-2.webp" class="object-cover w-full h-full"/>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="m-16 p-[8rem] bg-leaf fade-in-up-initial">
+		<section class="m-9 md:m-16 p-9 md:p-[8rem] bg-leaf fade-in-up-initial">
 			<div class="text-center">
 				<h2 class="mb-4 font-light text-2xl">Downloads</h2>
 				<p class="text-lg mb-9">Knitting patterns for sale and for free download</p>
 			</div>
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-9">
 				<div class="">
 					<a href="https://enikistudio.gumroad.com/l/the-oatmeal-hat">
-						<div class="w-full mb-6 h-[40rem]">
-							<img src="images/oatmealhat-main.jpeg" class="object-cover w-full h-full"/>
+						<div class="w-full mb-6 h-96 md:h-[40rem]">
+							<img src="images/oatmealhat-main.jpeg" class="object-cover w-full h-full hover:opacity-50 transition duration-200 ease-in-out"/>
 						</div>
-						<h3 class="text-lg mb-2">The Oatmeal Hat</h3>
-						<p class="text-md mb-4">This hat is a dupe of my favourite store-bought, machine knit, machine sewn hat. For the “store-bought” look, it is in fingering weight yarn and doubled in layer. </p>
+						<h3 class="text-xl mb-2 hover:opacity-50 transition duration-200 ease-in-out">The Oatmeal Hat</h3>
+						<p class="text-lg mb-4 hover:opacity-50 transition duration-200 ease-in-out">This hat is a dupe of my favourite store-bought, machine knit, machine sewn hat. For the “store-bought” look, it is in fingering weight yarn and doubled in layer. </p>
 						<a href="https://enikistudio.gumroad.com/l/the-oatmeal-hat" class="btn-secondary">Purchase</a>
 					</a>
 				</div>
 				<div class="">
 					<a href="https://enikistudio.gumroad.com/l/cuddle-kerchief">
-						<div class="w-full mb-6 h-[40rem]">
-							<img src="images/cuddle-kerchief.jpeg" class="object-cover w-full h-full"/>
+						<div class="w-full mb-6 h-96 md:h-[40rem]">
+							<img src="images/cuddle-kerchief.jpeg" class="object-cover w-full h-full hover:opacity-50 transition duration-200 ease-in-out"/>
 						</div>
-						<h3 class="text-lg mb-2">Cuddle Kerchief</h3>
-						<p class="text-md mb-4">A simple stockinette triangle kerchief for chilly spring days. When it’s too warm for a whole scarf but too cold to keep your neck exposed.</p>
+						<h3 class="text-xl mb-2 hover:opacity-50 transition duration-200 ease-in-out">Cuddle Kerchief</h3>
+						<p class="text-lg mb-4 hover:opacity-50 transition duration-200 ease-in-out">A simple stockinette triangle kerchief for chilly spring days. When it’s too warm for a whole scarf but too cold to keep your neck exposed.</p>
 						<a href="https://enikistudio.gumroad.com/l/cuddle-kerchief" class="btn-secondary">Free Download</a>
 					</a>
 				</div>
