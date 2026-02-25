@@ -249,8 +249,8 @@
   .col-span-4 {
     grid-column: span 4 / span 4;
   }
-  .m-9 {
-    margin: calc(var(--spacing) * 9);
+  .m-6 {
+    margin: calc(var(--spacing) * 6);
   }
   .mx-auto {
     margin-inline: auto;
@@ -1346,6 +1346,11 @@
   .md\:m-16 {
     @media (width >= 48rem) {
       margin: calc(var(--spacing) * 16);
+    }
+  }
+  .md\:mb-9 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 9);
     }
   }
   .md\:block {
